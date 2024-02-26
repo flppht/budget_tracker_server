@@ -19,8 +19,11 @@ app.use("/income", incomeRouter);
 const usersRouter = require("./routes/Users");
 app.use("/auth", usersRouter);
 
-db.sequelize.sync().then(() => {
-  app.listen(process.env.PORT, () => {
-    console.log("Server is listening on port: ", process.env.PORT);
-  });
-});
+db.sequelize
+  .sync()
+  .then(() => {
+    app.listen(process.env.PORT || 3001, () => {
+      console.log("Server is listening on port: ", process.env.PORT);
+    });
+  })
+  .catch((err) => console.log(err));
