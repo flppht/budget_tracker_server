@@ -24,10 +24,6 @@ db.sequelize
   .sync()
   .then(() => {
     app.listen(port, () => {
-      console.log(
-        "process.env.DB_USERNAME_PROD, ",
-        process.env.DB_USERNAME_PROD
-      );
       console.log("Server is listening on port: ", port);
     });
   })
