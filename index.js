@@ -1,16 +1,12 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const path = require("path");
-const favicon = require("serve-favicon");
 require("dotenv").config();
 
 const db = require("./models");
 
 app.use(express.json());
 app.use(cors());
-app.use(favicon(path.join(dirname, "build", "favicon.ico")));
-app.use(express.static(path.join(dirname, "build")));
 
 //routers
 const expensesRouter = require("./routes/Expenses");

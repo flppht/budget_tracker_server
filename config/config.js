@@ -14,10 +14,10 @@ const config = {
     dialect: "mysql",
   },
   production: {
-    username: process.env.DB_USERNAME_PROD,
-    password: process.env.DB_PASSWORD_PROD,
-    database: process.env.DB_DATABASE_PROD,
-    host: process.env.DB_HOST_PROD,
+    username: "vzgf66defno8qka7",
+    password: "nfdwaetfogke62v2",
+    database: "d55091oh96kjp55q",
+    host: "kcpgm0ka8vudfq76.chr7pe7iynqr.eu-west-1.rds.amazonaws.com",
     dialect: "mysql",
   },
 };
