@@ -11,7 +11,7 @@ router.post("/register", async (req, res) => {
     Users.create({ username, password: hash });
   });
 
-  res.json("user created");
+  res.json("User successfully created!");
 });
 
 router.post("/login", async (req, res) => {
