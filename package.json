@@ -24,6 +24,9 @@
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.9.1",
     "nodemon": "^3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
     "sequelize": "^6.36.0",
     "sequelize-cli": "^6.6.2",
     "serve": "^14.2.1"
