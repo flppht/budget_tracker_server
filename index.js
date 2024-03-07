@@ -18,7 +18,7 @@ app.use("/income", incomeRouter);
 const usersRouter = require("./routes/Users");
 app.use("/auth", usersRouter);
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 db.sequelize
   .sync()
