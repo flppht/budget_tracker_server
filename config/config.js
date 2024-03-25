@@ -2,23 +2,23 @@ const config = {
   development: {
     username: process.env.DB_USERNAME,
     password: process.env.DB_PASSWORD,
-    database: "budgettracker",
+    database: "budgettracker_dev",
     host: "127.0.0.1",
-    dialect: "mysql",
+    dialect: "postgres",
   },
   test: {
-    username: "root",
+    username: "postgres",
     password: null,
     database: "database_test",
     host: "127.0.0.1",
-    dialect: "mysql",
+    dialect: "postgres",
   },
   production: {
     username: process.env.DB_USERNAME_PROD,
     password: process.env.DB_PASSWORD_PROD,
     database: process.env.DB_DATABASE_PROD,
     host: process.env.DB_HOST_PROD,
-    dialect: "mysql",
+    dialect: "postgres",
   },
 };
 
